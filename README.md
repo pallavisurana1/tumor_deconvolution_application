@@ -10,7 +10,7 @@ Please cite our work when using this resource:
 
 ## Repository Structure
 
-This DOI 10.5281/zenodo.10042105 houses the bulk mRNA sequencing data required for deconvolution. The reference for the data is sourced from iHLCA but has been further processed to suit our specific use case. Notably, mutations in EGFR and KRAS were identified. Within EGFR, the exon 19 deletions (del745-750, 45%) and exon 21 substitutions (L858R, 40-45%) are of particular significance, as referenced from the GDC portal.
+This https://zenodo.org/records/10042128 houses the bulk mRNA sequencing data required for deconvolution. The reference for the data is sourced from iHLCA but has been further processed to suit our specific use case. Notably, mutations in EGFR and KRAS were identified. Within EGFR, the exon 19 deletions (del745-750, 45%) and exon 21 substitutions (L858R, 40-45%) are of particular significance, as referenced from the GDC portal.
 
 ### `scripts/`
 
