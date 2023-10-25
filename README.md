@@ -6,7 +6,7 @@ This repository contains the code and data used for tumor deconvolution focusing
 
 Please cite our work when using this resource:
 
-> *Manuscript in preparation*
+> *Biased Signaling by Mutant EGFR Underlies Cell of Origin for Lung Adenocarcinoma and Dependence on Protein Kinase C*
 
 ## Repository Structure
 
