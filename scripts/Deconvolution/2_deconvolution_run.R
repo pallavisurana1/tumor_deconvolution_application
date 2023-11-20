@@ -41,7 +41,7 @@ run_instaprism <- function(sc_data, bk_data_elem, cell_type_labels) {
 ## MUSIC 
 ##--------------------------------------------------------------------------------------------------------------
 
-music_deconvolution <- function(bulk_data_elem, hlca_sce, fname_i) {
+music_deconvolution <- function(bulk_data_elem, hlca_sce) {
   est.prop = music_prop(
     bulk.mtx = bulk_data_elem, 
     sc.sce = hlca_sce,
@@ -73,8 +73,8 @@ for(i in 1:length(bk.data)) {
 
 # MUSIC Deconvolution
 for(i in 1:5) {
-  est.prop <- music_deconvolution(bk.data[[i]], sc, fname[i])
-  fwrite(est.prop, paste0(hlca_path, "/results/props_music/", fname[i], ".csv"))
+  est.prop1 <- music_deconvolution(bk.data[[i]], sce)
+  fwrite(est.prop1, paste0(res_pth, "props_music/", names(bk.data)[i], ".csv"))
 }
 
 ##--------------------------------------------------------------------------------------------------------------
