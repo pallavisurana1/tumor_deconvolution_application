@@ -73,7 +73,7 @@ for(i in 1:length(bk.data)) {
 
 # MUSIC Deconvolution
 for(i in 1:5) {
-  est.prop <- music_deconvolution(bk.data[[i]], sc$hlca.sce, fname[i])
+  est.prop <- music_deconvolution(bk.data[[i]], sc, fname[i])
   fwrite(est.prop, paste0(hlca_path, "/results/props_music/", fname[i], ".csv"))
 }
 
