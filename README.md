@@ -1,6 +1,6 @@
 # Tumor Deconvolution on LUAD Datasets from TCGA
 
-This repository contains the code and data used for tumor deconvolution focusing on mutant EGFR cells. The analysis is primarily based on LUAD datasets from the TCGA project.
+This repository contains the code and data used for tumor deconvolution focusing on mutant EGFR cells. The analysis is primarily based on LUAD datasets from the TCGA project. This was analyzed for the Hannun Lab, Stony Brook Medicine.
 
 ## Repository Structure
 
