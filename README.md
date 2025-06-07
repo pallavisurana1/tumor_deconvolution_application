@@ -1,24 +1,58 @@
-# Tumor Deconvolution on LUAD Datasets from TCGA
+# 🧬 Tumor Deconvolution of LUAD TCGA Datasets
 
-This repository contains the code and data used for tumor deconvolution focusing on mutant EGFR cells. The analysis is primarily based on LUAD datasets from the TCGA project. This was analyzed for the Hannun Lab, Stony Brook Medicine.
+This repository contains code and data used for tumor deconvolution analysis focused on EGFR-mutant cells, using LUAD (Lung Adenocarcinoma) datasets from the TCGA project. The project was conducted for the **Hannun Lab** at **Stony Brook Medicine**.
 
-## Repository Structure
+---
 
-This https://zenodo.org/records/10042128 houses the bulk mRNA sequencing data required for deconvolution. The reference for the data is sourced from iHLCA but has been further processed to suit our specific use case. Notably, mutations in EGFR and KRAS were identified. Within EGFR, the exon 19 deletions (del745-750, 45%) and exon 21 substitutions (L858R, 40-45%) are of particular significance, as referenced from the GDC portal.
+## 📁 Repository Overview
 
-### `scripts/`
+The analysis utilizes bulk mRNA sequencing data available on Zenodo:
 
-Within this directory, you will find scripts categorized into three primary functions:
+🔗 [TCGA-LUAD bulk data (Zenodo)](https://zenodo.org/records/10042128)
 
--   **Preprocess**: Preparation of data for deconvolution.
--   **Deconvolution**: Actual tumor deconvolution operations.
--   **Postprocess**: Processes following the deconvolution to finalize results.
+The raw data originates from iHLCA and has been processed to support tumor deconvolution workflows. Mutational profiling includes detection of common driver mutations, specifically in **EGFR** and **KRAS**.
 
-## Usage
+**EGFR mutation highlights**:
+- Exon 19 deletions (e.g., del745-750) — ~45%
+- Exon 21 substitutions (e.g., L858R) — ~40–45%
 
-1.  Ensure that you have all necessary prerequisites installed.
-2.  Clone this repository.
-3.  Navigate to the `scripts/` directory.
-4.  Run the preprocessing scripts followed by the deconvolution and then the post-processing scripts.
+Data source and annotations are based on the [GDC Portal](https://portal.gdc.cancer.gov/).
 
-> *PS - Change the paths according to your folder location.*
+---
+
+## 📂 Project Structure
+
+```
+scripts/
+├── preprocess/      # Scripts for preparing input data
+├── deconvolution/   # Scripts performing the deconvolution
+└── postprocess/     # Scripts for downstream analysis and visualization
+```
+
+Each folder contains self-contained scripts organized by function.
+
+---
+
+## ⚙️ How to Use
+
+1. **Install Dependencies**: Ensure required packages are installed (R or Python, depending on the scripts).
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/luad-deconvolution.git
+   cd luad-deconvolution/scripts
+   ```
+3. **Run Analysis Pipeline**:
+   - Execute preprocessing scripts.
+   - Run deconvolution.
+   - Follow up with postprocessing scripts for final results.
+
+> ⚠️ **Note:** Update file paths in the scripts based on your local directory structure.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration inquiries, please reach out to:
+
+**Pallavi Surana**  
+📧 pallavi.surana@stonybrook.edu
