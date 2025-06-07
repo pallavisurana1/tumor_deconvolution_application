@@ -2,12 +2,6 @@
 
 This repository contains the code and data used for tumor deconvolution focusing on mutant EGFR cells. The analysis is primarily based on LUAD datasets from the TCGA project.
 
-## Citation
-
-Please cite our work when using this resource:
-
-> *Biased Signaling by Mutant EGFR Underlies Cell of Origin for Lung Adenocarcinoma and Dependence on Protein Kinase C*
-
 ## Repository Structure
 
 This https://zenodo.org/records/10042128 houses the bulk mRNA sequencing data required for deconvolution. The reference for the data is sourced from iHLCA but has been further processed to suit our specific use case. Notably, mutations in EGFR and KRAS were identified. Within EGFR, the exon 19 deletions (del745-750, 45%) and exon 21 substitutions (L858R, 40-45%) are of particular significance, as referenced from the GDC portal.
